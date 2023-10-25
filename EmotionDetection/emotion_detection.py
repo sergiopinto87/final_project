@@ -21,7 +21,7 @@ def emotion_detector (text_to_analyze):
         joy_score = emotion_data['joy']
         sadness_score = emotion_data['sadness']
 
-    elif response.status_code == 500:
+    elif response.status_code == 400:
         dominant_emotion = None 
         anger_score = None
         disgust_score = None
